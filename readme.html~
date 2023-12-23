@@ -1,0 +1,132 @@
+<html><head>
+  <script language="JavaScript" type="text/javascript" src="BCMscripts_files/calc"></script>
+ 
+  <meta name="Author" content="Victor Matveev">
+  <meta name="description" content="Calcium Calculator example script files">
+  <meta name="Keywords" content="Calcium Calculator, scripts, CalC, download, calcium diffusion, calcium buffering">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><title>Example Script Files for the "Calcium Calculator" Simulator</title> 
+
+
+
+<link rel="STYLESHEET" type="text/css" href="BCMscripts_files/victor.css">
+
+<style type="text/css">
+
+   A.SCRIPT:link {font-family:sans-serif; text-decoration:none;  font-size:8pt; font-style:bold; color:red; }
+   A.SCRIPT:visited {font-family:sans-serif; text-decoration:none;  font-size:8pt; font-style:bold;  color: maroon; }
+   A.SCRIPT:active {font-family:sans-serif; text-decoration:none;  font-size:8pt; font-style:bold;   color: magenta; }
+   A.SCRIPT:hover {font-family:sans-serif; text-decoration:underline;  font-size:8pt; font-style:bold;   color: magenta; }
+
+   CODE {font-size:8pt; color:#550055;}
+
+   TD.color {font-size:8pt; color:#000000; font-family:sans-serif; background-color:#F0F0F0; padding:6pt; }  
+
+   BODY {font-size:8pt; font-family:sans-serif;  }  
+   TD   {font-size:8pt; font-family:sans-serif;  }  
+   SUP {font-size:6pt; font-family:sans-serif;  }  
+   SUB {font-size:6pt; font-family:sans-serif;  }  
+/*       BODY {font-size:small; font-family:sans-serif;  } */
+   H4 {color: darkred; }
+/*       UL {font-size:small;} */
+/*       LI {font-size:small;} */
+
+</style>
+
+<!-- base href="http://web.njit.edu/~matveev/calc/examples/Bound_Calcium_Model/" --><!-- ===============================================================================
+                               B  O  D  Y
+=============================================================================== -->
+
+<script language="JavaScript" type="text/javascript">
+makeTitle("Calcium Calculator Simulation Script Files");
+</script></head>
+
+
+<body><table width="620"><tbody><tr><td class="title" colspan="5" height="33" width="100%">Calcium Calculator Simulation Script Files</td></tr><tr><td class="TCALC"><a class="TMENU" href="http://web.njit.edu/%7Ematveev/calc.html" target="_self">CalC Download</a></td> <td class="TCALC"><a class="TMENU" href="http://web.njit.edu/%7Ematveev/calc/manual.html" target="_self">CalC Manual</a></td> <td class="TCALC"><a class="TMENU" href="http://web.njit.edu/%7Ematveev/calc/scripts.html" target="_self">CalC Scripts</a></td> <td class="TCALC"><a class="TMENU" href="http://web.njit.edu/%7Ematveev/calc/calc_pub.html" target="_self">CalC Publications</a></td> <td class="TMENU"><a class="TMENU" href="http://web.njit.edu/%7Ematveev/" target="_top">Victor's Homepage</a></td> </tr></tbody></table><br>
+<br>
+
+
+<!-- b><font color=maroon>[[ Under Construction ]]</font></b><br><br -->
+
+<!--font color=maroon>Under construction</font><br><br><br-->
+
+The scripts following below reproduce the simulation results presented
+in the manuscript:<br><br>
+
+<table border="1" cellpadding="3"><tbody><tr><td class="COLOR">
+<a href="http://web.njit.edu/%7Ematveev/" target="_top">V. Matveev</a>,
+<a href="http://www.math.fsu.edu/%7Ebertram/" target="_top">R. Bertram</a>,
+<a href="http://mrb.niddk.nih.gov/sherman/" target="_top">A. Sherman</a> (2006) <br>
+<b>Residual Bound Ca<sup>2+</sup> Can Account for the Effects of Ca<sup>2+</sup> Buffers on Synaptic Facilitation
+</b><br>
+Journal of Neurophysiology, <b>96</b>: 3389-3397.
+<a href="http://jn.physiology.org/cgi/content/abstract/00101.2006v1">[ Abstract ]</a>
+<a href="http://jn.physiology.org/cgi/reprint/00101.2006v1">[ Full Text ]</a>
+<a href="http://web.njit.edu/%7Ematveev/documents/MatveevBertramSherman.pdf">[ PDF ]</a><br>
+</td></tr></tbody></table>
+<br>
+
+The comments in these script files 
+provide a detailed step-by-step 
+description of the simulations.
+
+<br><br><hr><br>
+
+<!-- ===============================================================================
+                          MAIN  TABLE
+=============================================================================== -->
+
+<table cellpadding="2" width="700">
+
+<tbody><tr><td valign="top">
+<font color="red">&#9830;</font>&nbsp;<a href="http://web.njit.edu/%7Ematveev/calc/examples/Bound_Calcium_Model/ode.BCM.par" class="SCRIPT">ode.BCM.par</a>
+</td><td>
+This script file contains all ODE definitions (implementation of Eqs. 6-9). Place it in the same
+directory with the files below before running the infividual figure scripts.
+<br><br>
+</td></tr>
+
+<tr><td valign="top">
+<font color="red">&#9830;</font>&nbsp;<a href="http://web.njit.edu/%7Ematveev/calc/examples/Bound_Calcium_Model/pde.BCM.par" class="SCRIPT">pde.BCM.par</a>
+</td><td>
+This script file contains all PDE definitions (implementation of Eqs. 2-5). Place it in the same
+directory with the files below before running the infividual figure scripts.
+<br><br>
+</td></tr>
+
+<tr><td valign="top">
+<font color="red">&#9830;</font>&nbsp;<a href="http://web.njit.edu/%7Ematveev/calc/examples/Bound_Calcium_Model/demo.BCM.par" class="SCRIPT">demo.BCM.par</a>
+</td><td>
+reproduces Figures 2 and 3 of the manuscript. Use fura-2 concentration as command-line parameter.
+Execute <code>calc demo.BCM.par 0</code> to reproduce Fig. 2 and control data in Fig. 3.
+Execute <code>calc demo.BCM.par 400</code> to reproduce fura-2 data in Fig. 3.
+
+<br><br>
+</td></tr>
+
+</tbody></table>
+
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+
+<!-- table cellpadding=3><tr><td bgcolor="#E0FFEA">
+<a href="../scripts.html">[ Back to Scripts ]</a>
+</td></tr></table -->
+<hr>
+<address>
+<small>
+<a href="http://web.njit.edu/%7Ematveev" target="_top">Victor Matveev</a>
+</small>
+</address>
+<small>
+This server is running a 
+<a href="http://www.redhat.com/" target="_top">Redhat</a> distribution of 
+<a href="http://www.linux.org/" target="_top">Linux</a>.
+<br>
+<!-- Created: Sun Apr 12 18:25:17 EDT 1998 -->
+<!-- hhmts start -->
+Last modified: Oct 14, 2006
+<!-- hhmts end -->
+</small>
+
+</body></html>
