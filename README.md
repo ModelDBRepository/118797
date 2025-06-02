@@ -1,4 +1,4 @@
-### Note from the ModelDB Administrator: the below is a snapshot of the
+Note from the ModelDB Administrator: the below is a snapshot of the
 [authors web site](http://web.njit.edu/~matveev/calc/BCMscripts.html) on April 10th, 2009.
 
 ---
@@ -34,14 +34,12 @@ description of the simulations.
 
 ---
 
-Victor Matveev
+Victor Matveev  
 This server is running a
 [Redhat](http://www.redhat.com/) distribution of
 [Linux](http://www.linux.org/).
 
+---
 Last modified: Oct 14, 2006
 
-
----
-
-2025-06-02: Converted README to Markdown.
+Converted README to Markdown: Jun 2, 2025
